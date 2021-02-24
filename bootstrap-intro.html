@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -16,16 +16,38 @@
     }
 
     .a {
-      height: 200px;
+      height: 100px;
       background-color: lavender;
       border: 1px solid blue;
     }
 
+    .vertical-center {
+      margin: 50px;
+      position: absolute;
+      top: 750px;
+      left:300px;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
 
+    .card {
+      margin: 10px;
+
+    }
+
+    .card-a {
+      overflow: hidden;
+      transition-duration: 2s;
+      transition-property: transform;
+    }
+
+    .spin-time {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
     }
   </style>
 
-  <title>Hello, world!</title>
+  <title>Welcome to my Gamer Life</title>
 </head>
 
 <body>
@@ -33,7 +55,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg a">one</div>
+      <div class="col-lg a color-me">one</div>
       <div class="col-lg a">two</div>
     </div>
     <div class="row">
@@ -52,63 +74,51 @@
     </div>
   </div>
 
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+  <br>
 
-<div class="alert alert-success" role="alert">
-  A simple success alert—check it out!
-</div>
+  <div class="container-fluid">
+    <div class="vertical-center">
+      <div class="row">
+        <br>
+        <div class="card card-a" style="width: 18rem;">
+          <img src="images/nook.png" class="card-img-top" alt="tomnook">
+          <div class="card-body">
+            <h5 class="card-title">Tax Evasion is a Crime</h5>
+            <p class="card-text">File your taxes correctly or face the wrath of Mr. Tom Nook</p>
+            <a class="btn btn-primary" id="btnA">File Taxes</a>
+          </div>
+        </div>
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    What is that?
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">I got the Mac 'n' Cheese</a></li>
-    <li><a class="dropdown-item" href="#">with the</a></li>
-    <li><a class="dropdown-item" href="#">CHICEKN STRIPS</a></li>
-  </ul>
-</div>
-<br>
-<div class="card" style="width: 18rem;">
-  <img src="images/oldmoney.jpg" class="card-img-top" alt="oldmoney">
-  <div class="card-body">
-    <h5 class="card-title">CLICK FOR FREE MONEY</h5>
-    <p class="card-text">Fill out our surveys to be in to win some money. (Not 100% guranteed that you'll get it though)</p>
-    <a href="#" class="btn btn-primary">Free Money</a>
+        <div class="card card-b" style="width: 18rem;">
+          <img src="images/isabelle.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pick up your Trash</h5>
+            <p class="card-text">A clean neighbourhood is a happy neighbourhood and a sane Isabelle</p>
+            <a href="#" class="btn btn-primary">Go Clean</a>
+          </div>
+        </div>
+
+        <div class="card card-c" style="width: 18rem;">
+          <img src="images/leif.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Reduce, Reuse & Recycle</h5>
+            <p class="card-text">Think of how much you impact the environment everyday and try to be a better person</p>
+            <a href="#" class="btn btn-primary">Donate to EARTHLOVE</a>
+          </div>
+        </div>
+
+        <div class="card card-d" style="width: 18rem;">
+          <img src="images/redd.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Premium High-Quality Art Prints</h5>
+            <p class="card-text">Gotta be honest, I don't have any real works of art anymore but my print making skills are sure good</p>
+            <a href="#" class="btn btn-primary">Buy Art Prints</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-<br>
-<div class="spinner-border text-success" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -120,6 +130,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+  <!-- jQuery script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('document').ready(function() {
+
+      $('#btnA').click(function() {
+        $('.card-a').addClass('spin-time');
+      });
+
+      $('#btnD').click(function(){
+        alert('aaaaaaaaaaaa');
+        $('color-me').css('background-color', 'olive')
+      });
+    });
+  </script>
+
+
+  <!-- jQuery script ENDS -->
 </body>
 
 </html>
